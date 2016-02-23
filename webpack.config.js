@@ -1,10 +1,10 @@
 module.exports = {
 	entry: {
-		page1: './src/js/page1/main.js',
-		page2: './src/js/page2/main.js'
+		page1: __dirname + '/src/js/page1/main.js',
+		page2: __dirname + '/src/js/page2/main.js'
 	},
 	output: {
-		path: './wwwroot/js',
+		path: __dirname + '/wwwroot/js',
 		filename: '[name].js'
 	},
 	module: {
@@ -14,6 +14,12 @@ module.exports = {
 				loader: 'style!css'
 			}
 		]
+	},
+	resolve: {
+		extensions: ['', '.js', '.css'],
+		alias: {
+			css: __dirname +'/src/css'
+		}
 	},
     devtool: 'source-map'
 };
