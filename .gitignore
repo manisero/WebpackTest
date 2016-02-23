@@ -1,3 +1,15 @@
+##########
+# CUSTOM
+##########
+
+wwwroot/
+
+
+
+##########
+# STANDARD
+##########
+
 # Logs
 logs
 *.log

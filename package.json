@@ -1,0 +1,12 @@
+{
+  "name": "WebpackTest",
+  "version": "0.0.0",
+  "devDependencies": {
+    "webpack": "1.12.14",
+    "css-loader": "^0.23.1",
+    "style-loader": "^0.13.0"
+  },
+  "scripts": {
+    "webpack": "webpack --progress --colors --watch"
+  }
+}
